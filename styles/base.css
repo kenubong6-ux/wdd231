@@ -77,11 +77,11 @@ nav {
     background-color: var(--accent-color);
 }
 
-/* --- MAIN CONTENT (Placeholder for Step 5) --- */
+/* --- MAIN CONTENT --- */
 main {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto; /* Centers the content */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Container for the About Me and Photo */
@@ -131,7 +131,7 @@ main {
 /* Individual Course Cards */
 .course-card {
     padding: 15px;
-    background-color: #fce4ec; /* A light distinct color for incomplete */
+    background-color: #fce4ec;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 150px;
@@ -140,7 +140,7 @@ main {
 
 /* Completed Course Styling */
 .course-card.completed {
-    background-color: #e8f5e9; /* A light green for completed courses */
+    background-color: #e8f5e9;
     border-color: #4caf50;
 }
 
