@@ -154,9 +154,9 @@ footer {
 }
 
 .social-links img {
-    width: 16;
+    width: 16px;
     margin: 0 10px;
-    transition: transform o.3s;
+    transition: transform 0.3s;
 }
 
 .social-links img:hover {
