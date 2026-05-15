@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Web Frontend Development - Ubong Ken</title>
+    <meta name="description" content="WDD 231 Course Home Page showcasing frontend web development projects.">
+    <meta name="author" content="Ubong Ken">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="My Logo">
+        <span>Ubong Ken</span>
+        <button id="menu" title="Menu">&#9776; </button>
+    </header>
+    
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="chambers/index.html" title="Chamber Project">Chamber</a></li>
+            <li><a href="final/index.html" title="Final Project">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="profile-grid">
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <p>I am a web and application developer with a foundation in both frontend and backend technologies. Currently, I am expanding my expertise through formal coursework in web development, where I focus on building responsive, user-centered digital experiences. My technical toolkit is focused on mastering the core pillars of web design and development, and I have a strong interest in the intersection of clean code and professional graphics design. Beyond development, I enjoy exploring video editing and brand identity, always looking for ways to bridge the gap between functional logic and aesthetic appeal. I am passionate about continuous learning and mastering skills that drive innovation in tech industry.</p>
+            </section>
+        
+            <section class="card student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/817229.jpg" alt="My Profile Photo">
+            </section>
+        </div>
+
+            <section class="card courses-section">
+                <h2>Web Certificate Courses</h2>
+
+                <div class="filter-buttons">
+                    <button id="all">All</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </div>
+
+                <div id="course-container" class="course-grid"></div>
+
+                <p id="total-credits"></p>
+            </section>   
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/kenubong6-ux" target="_blank"> <img src="images/github.svg" alt="Githuh Profile"></a>
+            <a href="https://linkedin.com/in/ken-ubong20/" target="_blank"> <img src="images/linkedin.svg" alt="Linkedin Profile"></a>
+            <a href="https://facebook.con/ken.neth.477822" target="_blank"> <img src="images/facebook.svg" alt="Facebook Profile"></a>
+            <a href="https://x.com/TheNetGuyODO" target="_blank"> <img src="images/twitter-x.svg" alt="X Profile"></a>
+        </div>
+
+        <p>&copy; <span id="currentyear"> </span> • Ubong Ken • Port Harcourt, Nigeria</p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

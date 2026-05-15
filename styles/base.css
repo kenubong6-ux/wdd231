@@ -1,0 +1,164 @@
+/* --- CSS Variables --- */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --background-light: #f4f4f9;
+    --font-main: 'Roboto', sans-serif;
+}
+
+/* --- STYLES --- */
+body {
+    font-family: var(--font-main);
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header img {
+    width: 25px;
+    height: auto;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* --- HAMBURGER BUTTON --- */
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* --- MOBILE NAVIGATION --- */
+nav {
+    background-color: #1a252f;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li a {
+    display: block;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+}
+
+.navigation li a:hover {
+    background-color: var(--accent-color);
+}
+
+/* --- MAIN CONTENT (Placeholder for Step 5) --- */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the content */
+}
+
+/* Container for the About Me and Photo */
+.profile-grid {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.student-photo img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Course Buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Course Grid */
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Individual Course Cards */
+.course-card {
+    padding: 15px;
+    background-color: #fce4ec; /* A light distinct color for incomplete */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+/* Completed Course Styling */
+.course-card.completed {
+    background-color: #e8f5e9; /* A light green for completed courses */
+    border-color: #4caf50;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.social-links img {
+    width: 16;
+    margin: 0 10px;
+    transition: transform o.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
