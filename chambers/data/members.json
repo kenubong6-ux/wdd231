@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Portal Solutions",
+    "address": "Garrison Market, Port Harcourt, Rivers State, Nigeria",
+    "phone": "+2348139955580",
+    "website": "https://www.portalsolutions.ng",
+    "image": "portal-solutions.jpg",
+    "membershipLevel": 3,
+    "description": "Software company providing custom web applications, mobile applications, ICT security solutions and Ventriplus POS systems."
+  },
+
+  {
+    "name": "E-NET Supreme Technologies",
+    "address": "Suite 58 Georgewill/Clifford Plaza, Choba Junction, Port Harcourt, Rivers State, Nigeria",
+    "phone": "+2348062770265",
+    "website": "https://enetsupreme.com.ng",
+    "image": "enet-supreme.jpg",
+    "membershipLevel": 3,
+    "description": "Technology company offering website development, branding, graphics design, digital marketing, printing and business solutions."
+  },
+
+  {
+    "name": "Alprosel Tech",
+    "address": "Port Harcourt, Rivers State, Nigeria",
+    "phone": "+2348078733543",
+    "website": "https://www.alproseltech.com",
+    "image": "alprosel-tech.jpg",
+    "membershipLevel": 3,
+    "description": "Digital solutions company specializing in web development, mobile applications, AI solutions, cloud infrastructure and branding."
+  },
+
+  {
+    "name": "Elsoft Technologies Limited",
+    "address": "Port Harcourt, Rivers State, Nigeria",
+    "phone": "+2348052435089",
+    "website": "https://elsoftnig.com",
+    "image": "elsoft-technologies.jpg",
+    "membershipLevel": 2,
+    "description": "IT equipment and software company focused on infrastructure maintenance, software development and support services."
+  },
+
+  {
+    "name": "Grey InfoTech Limited",
+    "address": "9 Godfery Tata Close, Rumuewhara New Layout, Port Harcourt, Rivers State, Nigeria",
+    "phone": "+2348028095571",
+    "website": "https://www.greyinfotech.com.ng",
+    "image": "grey-infotech.jpg",
+    "membershipLevel": 3,
+    "description": "Web and mobile application company delivering UX/UI design, enterprise platforms and digital transformation solutions."
+  },
+
+  {
+    "name": "Karidav Integrated Services Limited",
+    "address": "14 Ambrose Ogbonna Avenue, Off Stadium Road, Port Harcourt, Rivers State, Nigeria",
+    "phone": "+2348034104794",
+    "website": "https://karidav.ng",
+    "image": "karidav.jpg",
+    "membershipLevel": 2,
+    "description": "Technology and systems integration company delivering enterprise systems, managed IT and customer-focused digital solutions."
+  },
+
+  {
+    "name": "Jupytec Innovation Labs",
+    "address": "No 3B Press Avenue ACMGS School Road, Elelenwo, Port Harcourt, Rivers State, Nigeria",
+    "phone": "+2348138072059",
+    "website": "https://www.jupytec.com.ng",
+    "image": "jupytec.jpg",
+    "membershipLevel": 3,
+    "description": "Technology company focused on custom software development, data analytics, cloud infrastructure and consulting services."
+  }
+]

@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+    
+    /* --- HEADER & NAVIGATION --- */
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navigation li a {
+        border-bottom: none;
+        padding: 1rem 2rem;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        padding: 3rem 2rem;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+    }
+
+    .social-links {
+        text-align: center;
+        margin: 0;
+    }
+
+    .dev-info {
+        text-align: right;
+    }
+
+    /* --- DIRECTORY LIST VIEW --- */
+    .list section {
+        grid-template-columns: 2fr 2fr 1fr 1fr; 
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+}

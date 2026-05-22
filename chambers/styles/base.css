@@ -1,0 +1,259 @@
+:root {
+    --primary-color: #1F2937;
+    --accent-color: #3B82F6;
+    --bg-light: #F9FAFB;
+    --text-main: #111827;
+    --text-light: #FFFFFF;
+    --font-main: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header div {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9CA3AF;
+}
+
+/* --- HAMBURGER BUTTON --- */
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* --- MOBILE NAVIGATION --- */
+nav {
+    background-color: #111827;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation li a {
+    display: block;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation li a:hover, .navigation li a.active {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+}
+
+/* --- MAIN CONTENT --- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: translateY(-3px);
+}
+
+/* ========================================= */
+/* --- DIRECTORY VIEW TOGGLES & STYLES ---   */
+/* ========================================= */
+
+.view-toggles {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.view-toggles button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #E5E7EB;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.view-toggles button:hover {
+    background-color: #D1D5DB;
+}
+
+.view-toggles button.active {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-color: var(--primary-color);
+}
+
+/* Grid View */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid section {
+    background-color: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.grid img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.grid h3 {
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+}
+
+.grid p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #4B5563;
+}
+
+.grid a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid a:hover {
+    text-decoration: underline;
+}
+
+/* List View */
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid #E5E7EB;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.list section:nth-child(even) {
+    background-color: #F9FAFB;
+}
+
+.list section img {
+    display: none;
+}
+
+.list h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.list p, .list a {
+    margin: 0;
+    font-size: 0.95rem;
+}
