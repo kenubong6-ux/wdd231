@@ -11,7 +11,7 @@ async function getChamberMembers() {
         const response = await fetch(membersURL);
         if (response.ok) {
             const data = await response.json();
-            displayMembers(data); // Send the array to be displayed
+            displayMembers(data);
         } else {
             throw Error(await response.text());
         }
@@ -29,10 +29,21 @@ const displayMembers = (members) => {
         // Create elements
         let card = document.createElement('section');
         
-        // Build the HTML inside the section
+        // Translate the membership level number into a readable string
+        let levelName = "";
+        if (member.membershipLevel === 1) {
+            levelName = "Member";
+        } else if (member.membershipLevel === 2) {
+            levelName = "Silver";
+        } else if (member.membershipLevel === 3) {
+            levelName = "Gold";
+        }
+        
+        // Build the HTML inside the section (Now including the levelName!)
         card.innerHTML = `
             <img src="images/${member.image}" alt="${member.name} Logo" loading="lazy" width="150">
             <h3>${member.name}</h3>
+            <p><strong>Level:</strong> ${levelName}</p>
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <a href="${member.website}" target="_blank">${member.website}</a>
