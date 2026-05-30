@@ -48,6 +48,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    main h1 {
+        grid-column: 1 / 4;
+    }
+    
     .home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
