@@ -46,3 +46,29 @@
         padding: 1rem 2rem;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .hero {
+        grid-column: 1 / 4;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 0;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .events { grid-column: 1 / 2; }
+    .weather { grid-column: 2 / 3; }
+    .spotlights { grid-column: 3 / 4; }
+}
