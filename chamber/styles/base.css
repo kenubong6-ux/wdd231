@@ -42,12 +42,13 @@ header div {
     margin-left: 1rem;
 }
 
-header h1 {
+header h2 {
     margin: 0;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
-header h2 {
+header h3 {
     margin: 0;
     font-size: 1rem;
     font-weight: 400;
@@ -102,7 +103,7 @@ main {
     padding: 2rem 1rem;
 }
 
-main h2 {
+main h1 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--primary-color);
