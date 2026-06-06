@@ -330,3 +330,89 @@ footer p {
     text-align: center;
     border-radius: 8px;
 }
+
+/* FORM STYLING */
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 500px;
+}
+
+.membership-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.membership-form input, 
+.membership-form select, 
+.membership-form textarea {
+    padding: 0.75rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-main);
+}
+
+.membership-form input:required {
+    border-left: 4px solid #E53E3E;
+}
+
+.membership-form input:valid {
+    border-left: 4px solid #38A169;
+}
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* MODAL STYLING */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    max-width: 400px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.close-modal {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* PAGE LOAD ANIMATION */
+@keyframes slideInFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-card {
+    animation: slideInFade 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* Stagger the animation so they load one after another */
+.np-card { animation-delay: 0.1s; }
+.bronze-card { animation-delay: 0.3s; }
+.silver-card { animation-delay: 0.5s; }
+.gold-card { animation-delay: 0.7s; }

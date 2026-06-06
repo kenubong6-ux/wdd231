@@ -77,3 +77,12 @@
     .weather { grid-column: 2 / 3; }
     .spotlights { grid-column: 3 / 4; }
 }
+
+@media screen and (min-width: 768px) {
+    .join-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+}
