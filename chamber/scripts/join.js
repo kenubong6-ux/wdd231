@@ -1,10 +1,13 @@
-// 1. Set the hidden timestamp value when the page loads
-document.addEventListener("DOMContentLoaded", () => {
-    const timestampField = document.getElementById("timestamp");
-    if (timestampField) {
-        timestampField.value = new Date().toLocaleString();
-    }
-});
+// 1. Grab the timestamp right before the form submits (This fixes the missing date!)
+const form = document.querySelector(".membership-form");
+if (form) {
+    form.addEventListener("submit", () => {
+        const timestampField = document.getElementById("timestamp");
+        if (timestampField) {
+            timestampField.value = new Date().toLocaleString();
+        }
+    });
+}
 
 // 2. Modal Logic
 const modals = {
@@ -23,19 +26,24 @@ const buttons = {
 
 // Open Modals
 Object.keys(buttons).forEach(key => {
-    buttons[key].addEventListener("click", () => {
-        modals[key].showModal();
-    });
+    // Only add the listener if the button actually exists on the page
+    if (buttons[key]) {
+        buttons[key].addEventListener("click", (e) => {
+            e.preventDefault(); // Prevents the button from accidentally submitting the form
+            modals[key].showModal();
+        });
+    }
 });
 
-// Close Modals
+// Close Modals with the Close Button
 document.querySelectorAll(".close-modal").forEach(button => {
     button.addEventListener("click", (e) => {
+        e.preventDefault();
         e.target.closest("dialog").close();
     });
 });
 
-// Close modal when clicking outside of it
+// Close modal when clicking outside of it (clicking the backdrop)
 document.querySelectorAll("dialog").forEach(dialog => {
     dialog.addEventListener("click", (e) => {
         const dialogDimensions = dialog.getBoundingClientRect();
