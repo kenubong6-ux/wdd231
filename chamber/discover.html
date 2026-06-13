@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Port Harcourt Chamber of Commerce - Home</title>
-    <meta name="description" content="Welcome to the Port Harcourt Chamber of Commerce. Join the leading network of professionals driving our local economy forward in Rivers State.">
+    <title>Port Harcourt Chamber of Commerce - Discover</title>
+    <meta name="description" content="Discover the vibrant culture, events, and demographics of Port Harcourt. Explore what makes our city a prime location for business.">
     <meta name="author" content="Ubong Ken">
     
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -25,8 +25,7 @@
     
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script type="module" src="scripts/discover.js" defer></script>
     
 </head>
 <body>
@@ -41,51 +40,22 @@
 
     <nav>
         <ul class="navigation">
-            <li><a href="index.html" title="Home" class="active">Home</a></li>
-            <li><a href="discover.html" title="Discover">Discover</a></li>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="discover.html" title="Discover" class="active">Discover</a></li>
             <li><a href="directory.html" title="Directory">Directory</a></li>
             <li><a href="join.html" title="Join">Join</a></li>
         </ul>
     </nav>
 
-    <main class="home-grid">
-        <h1>Welcome to the Port Harcourt Chamber of Commerce</h1>
-    <section class="hero">
-        <picture>
-            <source media="(max-width: 768px)" srcset="images/hero-mobile.webp">
-            <img src="images/hero-desktop.webp" alt="Port Harcourt Business District" width="1200" height="600" loading="lazy">
-        </picture>
-        <div class="hero-content">
-            <h2>Empowering Port Harcourt Businesses</h2>
-            <p>Join the leading network of professionals driving our local economy forward.</p>
-            <a href="join.html" class="cta-button">Join the Chamber</a>
+    <main class="discover-container">
+        <div class="discover-header">
+            <h1>Discover Port Harcourt</h1>
+            <div id="visit-message" class="visit-message"></div>
         </div>
-    </section>
 
-    <section class="events card">
-        <h3>Upcoming Events</h3>
-        <ul>
-            <li><strong>June 15:</strong> Tech Innovators Mixer</li>
-            <li><strong>June 22:</strong> Small Business Funding Workshop</li>
-            <li><strong>July 5:</strong> Annual Chamber Gala</li>
-        </ul>
-    </section>
-
-    <section class="weather card">
-        <h3>Port Harcourt Weather</h3>
-        <div id="current-weather">
+        <div class="discover-grid" id="discover-grid">
             </div>
-        <h4>3-Day Forecast</h4>
-        <div id="weather-forecast">
-            </div>
-    </section>
-
-    <section class="spotlights card">
-        <h3>Member Spotlights</h3>
-        <div id="spotlight-container">
-            </div>
-    </section>
-</main>
+    </main>
 
     <footer>
         <div class="footer-content">

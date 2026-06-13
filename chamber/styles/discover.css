@@ -1,0 +1,124 @@
+/* Styling the Visit Message */
+.visit-message {
+    background-color: var(--accent-color, #3B82F6);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+/* Card Base Styling */
+.card {
+    background-color: var(--card-bg, #ffffff);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card address {
+    font-style: normal;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.card button {
+    background-color: var(--nav-bg, #111827);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* ----------------------------------------- */
+/* 1. MOBILE VIEW (Stacked)                  */
+/* ----------------------------------------- */
+.discover-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+/* Assigning the grid areas to the injected classes */
+.c1 { grid-area: card1; }
+.c2 { grid-area: card2; }
+.c3 { grid-area: card3; }
+.c4 { grid-area: card4; }
+.c5 { grid-area: card5; }
+.c6 { grid-area: card6; }
+.c7 { grid-area: card7; }
+.c8 { grid-area: card8; }
+
+/* ----------------------------------------- */
+/* 2. MEDIUM VIEW (Tablet)                   */
+/* ----------------------------------------- */
+@media screen and (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    /* CSS Image Effect applied only on larger screens per instructions */
+    .card img:hover {
+        transform: scale(1.05); /* Slight zoom */
+        filter: brightness(1.1); /* Slight brighten */
+    }
+}
+
+/* ----------------------------------------- */
+/* 3. LARGE VIEW (Desktop)                   */
+/* ----------------------------------------- */
+@media screen and (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card3"
+            "card6 card7 card8";
+    }
+    
+    .c3 {
+        /* This centers the content vertically inside the tall card */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
