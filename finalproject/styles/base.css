@@ -28,6 +28,13 @@ h1, h2, h3 {
     letter-spacing: 1px;
 }
 
+.site-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
 h1 { color: var(--accent-color); }
 
 /* Header & Navigation */
@@ -169,32 +176,6 @@ footer {
 
 footer a { color: var(--accent-color); }
 
-@media screen and (max-width: 768px) {
-    #menu-toggle {
-        display: block;
-    }
-    
-    nav {
-        display: none;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background-color: var(--card-bg);
-        border-bottom: 2px solid var(--accent-color);
-    }
-    
-    nav.open {
-        display: block;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem 0;
-        gap: 1rem;
-    }
-}
 
 /* Form Styling */
 .community-form {
@@ -335,11 +316,4 @@ input:focus, select:focus, textarea:focus {
     border-radius: 4px;
     margin-bottom: 1rem;
     border-left: 4px solid var(--accent-color);
-}
-
-/* Desktop View for Guides (Article + Sidebar) */
-@media screen and (min-width: 800px) {
-    .guide-layout {
-        grid-template-columns: 2.5fr 1fr;
-    }
 }

@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: var(--card-bg);
+        border-bottom: 2px solid var(--accent-color);
+    }
+    
+    nav.open {
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+}
+
+/* Desktop View for Guides (Article + Sidebar) */
+@media screen and (min-width: 800px) {
+    .guide-layout {
+        grid-template-columns: 2.5fr 1fr;
+    }
+}
