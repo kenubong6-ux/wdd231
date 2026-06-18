@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Guides - PHC Rig & Race</title>
+    <meta name="description" content="Step-by-step hardware optimization guides. Learn how to tune your racing wheel and optimize Windows 11 for max frames.">
+    <meta name="author" content="Ubong Ken">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PHC Rig & Race</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Open Menu">&#9776;</button>
+        <nav id="main-nav" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html" class="active">Hardware Guides</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="gallery.html">Rig Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-section guide-layout">
+        <article class="guide-article">
+            <h2>Ultimate Windows 11 Sim Racing Optimization</h2>
+            <p class="guide-meta">Published by Ubong Ken | Difficulty: Beginner</p>
+            
+            <img src="images/win11-optimize.webp" alt="Windows 11 settings screen for gaming" loading="lazy" class="guide-hero-img">
+
+            <h3>1. Enable Game Mode</h3>
+            <p>Windows Game Mode prevents Windows Update from performing driver installations and sending restart notifications. It also helps achieve a more stable frame rate.</p>
+            <ul>
+                <li>Press the <strong>Windows Key</strong> and type "Game Mode".</li>
+                <li>Select <strong>Game Mode settings</strong>.</li>
+                <li>Toggle the switch to <strong>On</strong>.</li>
+            </ul>
+
+            <h3>2. Disable Xbox Game Bar (If not recording)</h3>
+            <p>If you use OBS or Nvidia Shadowplay to record your races, the Xbox Game Bar is just eating up background memory.</p>
+            <ul>
+                <li>Go to <strong>Settings > Gaming > Xbox Game Bar</strong>.</li>
+                <li>Toggle it to <strong>Off</strong>.</li>
+            </ul>
+
+            <h3>3. High Performance Power Plan</h3>
+            <p>Don't let your PC bottleneck your CPU just to save a few watts of electricity.</p>
+            <ul>
+                <li>Open <strong>Control Panel > Hardware and Sound > Power Options</strong>.</li>
+                <li>Click "Show additional plans" and select <strong>High Performance</strong>.</li>
+            </ul>
+            
+            <a href="index.html" class="cta-button" style="margin-top: 2rem;">Back to All Guides</a>
+        </article>
+
+        <aside class="guide-sidebar">
+            <h3>Popular Gear</h3>
+            <div class="gear-card">
+                <h4>Logitech G923</h4>
+                <p>Best entry-level wheel with TrueForce feedback.</p>
+            </div>
+            <div class="gear-card">
+                <h4>Moza R5 Bundle</h4>
+                <p>The new king of budget Direct Drive wheels.</p>
+            </div>
+            <div class="gear-card">
+                <h4>AOC 24G2</h4>
+                <p>Affordable 144Hz 1080p monitor for smooth racing.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | PHC Rig & Race | Port Harcourt</p>
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a> | 
+            <a href="https://youtube.com/your-video-link" target="_blank">Project Demo Video</a>
+        </div>
+    </footer>
+</body>
+</html>

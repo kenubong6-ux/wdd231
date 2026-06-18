@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHC Rig & Race - PC Setup & Racing Hub</title>
+    <meta name="description" content="The premier hub for PC gaming enthusiasts. Discover hardware optimization guides, racing controller configurations, and clean desk aesthetics.">
+    <meta name="author" content="Ubong Ken">
+    
+    <meta property="og:title" content="PHC Rig & Race">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-bg.webp">
+    <meta property="og:url" content="https://yourgithub.github.io/wdd231/finalproject/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PHC Rig & Race</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Open Menu">&#9776;</button>
+        <nav id="main-nav" class="hidden">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="guides.html">Hardware Guides</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="gallery.html">Rig Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Optimize Your Rig for Competitive Racing</h2>
+            <p>From Windows 11 graphics tweaks to cable management, build your perfect setup.</p>
+            <a href="join.html" id="join-btn" class="cta-button">Join the Community</a>
+        </section>
+
+        <section class="content-section">
+            <h3>Latest Guides & Gear</h3>
+            <div id="dynamic-grid" class="grid-container"></div>
+        </section>
+
+        <dialog id="welcome-modal">
+            <h3>Welcome to the Grid</h3>
+            <p>Subscribe to get the latest controller configurations and hardware drops.</p>
+            <button id="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | PHC Rig & Race | Port Harcourt</p>
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a> | 
+            <a href="https://youtube.com/your-video-link" target="_blank">Project Demo Video</a>
+        </div>
+    </footer>
+</body>
+</html>

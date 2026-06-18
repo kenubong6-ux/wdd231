@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Grid - PHC Rig & Race</title>
+    <meta name="description" content="Join the PHC Rig & Race community. Submit your setup and connect with local Port Harcourt racers.">
+    <meta name="author" content="Ubong Ken">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>PHC Rig & Race</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Open Menu">&#9776;</button>
+        <nav id="main-nav" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html">Hardware Guides</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="gallery.html">Rig Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-section">
+        <h2>Submit Your Rig to the Gallery</h2>
+        <p>Fill out the form below to join the community and get your setup featured.</p>
+
+        <form action="thankyou.html" method="GET" class="community-form">
+            <fieldset>
+                <legend>Driver Details</legend>
+                <label>
+                    Gamer Tag / Name:
+                    <input type="text" name="gamertag" required placeholder="e.g., SpeedDemon99">
+                </label>
+                <label>
+                    Email Address:
+                    <input type="email" name="email" required placeholder="you@example.com">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Rig Specifications</legend>
+                <label>
+                    Primary Category:
+                    <select name="category" required>
+                        <option value="" disabled selected>Select an option...</option>
+                        <option value="sim-racing">Sim Racing Wheel Setup</option>
+                        <option value="desk-aesthetic">Minimalist Desk Setup</option>
+                        <option value="budget-build">Budget 1080p Build</option>
+                    </select>
+                </label>
+                <label>
+                    Setup Description:
+                    <textarea name="description" rows="4" required placeholder="Tell us about your hardware and cable management..."></textarea>
+                </label>
+            </fieldset>
+
+            <button type="submit" class="cta-button">Submit to Grid</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | PHC Rig & Race | Port Harcourt</p>
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a> | 
+            <a href="https://youtube.com/your-video-link" target="_blank">Project Demo Video</a>
+        </div>
+    </footer>
+</body>
+</html>

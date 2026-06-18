@@ -1,0 +1,124 @@
+{
+  "rigAndRaceData": [
+    {
+      "id": "g01",
+      "title": "Logitech G923 Assetto Corsa Setup",
+      "category": "Racing Wheels",
+      "difficulty": "Intermediate",
+      "description": "Dial in the perfect force feedback settings for drifting and grip racing in Assetto Corsa.",
+      "image": "images/g923-setup.webp"
+    },
+    {
+      "id": "g02",
+      "title": "Budget 1080p Rig Cable Management",
+      "category": "Desk Aesthetics",
+      "difficulty": "Beginner",
+      "description": "Learn how to hide unsightly cables under your desk using simple raceways and zip ties.",
+      "image": "images/cable-manage.webp"
+    },
+    {
+      "id": "g03",
+      "title": "Windows 11 Gaming Mode Optimization",
+      "category": "System Tweaks",
+      "difficulty": "Beginner",
+      "description": "Stop background processes from eating your frames. A complete guide to Windows 11 game settings.",
+      "image": "images/win11-optimize.webp"
+    },
+    {
+      "id": "g04",
+      "title": "Thrustmaster T300 RS GT Calibration",
+      "category": "Racing Wheels",
+      "difficulty": "Advanced",
+      "description": "Advanced belt-drive calibration techniques to prevent overheating during long endurance races.",
+      "image": "images/t300-calib.webp"
+    },
+    {
+      "id": "g05",
+      "title": "Minimalist Dual Monitor Setup",
+      "category": "Desk Aesthetics",
+      "description": "How to align and mount dual monitors for a seamless, floating aesthetic without desktop clutter.",
+      "difficulty": "Intermediate",
+      "image": "images/dual-monitor.webp"
+    },
+    {
+      "id": "g06",
+      "title": "Fanatec CSL DD F1 22 Settings",
+      "category": "Racing Wheels",
+      "difficulty": "Advanced",
+      "description": "Maximize the detail of your direct drive wheelbase for F1 22 competitive leagues.",
+      "image": "images/fanatec-f1.webp"
+    },
+    {
+      "id": "g07",
+      "title": "Best Budget Racing Seats",
+      "category": "Hardware",
+      "difficulty": "Beginner",
+      "description": "A breakdown of the most comfortable and stable racing seats under a tight budget.",
+      "image": "images/budget-seat.webp"
+    },
+    {
+      "id": "g08",
+      "title": "Ultimate RGB Lighting Guide",
+      "category": "Desk Aesthetics",
+      "difficulty": "Intermediate",
+      "description": "Syncing your PC case lights, wall panels, and peripherals for a unified ambient glow.",
+      "image": "images/rgb-guide.webp"
+    },
+    {
+      "id": "g09",
+      "title": "Undervolting your RTX 4060",
+      "category": "System Tweaks",
+      "difficulty": "Advanced",
+      "description": "Lower your GPU temperatures and fan noise without losing any frames per second.",
+      "image": "images/undervolt.webp"
+    },
+    {
+      "id": "g10",
+      "title": "Moza R5 Bundle Review & Setup",
+      "category": "Hardware",
+      "difficulty": "Intermediate",
+      "description": "Step-by-step setup guide for the Moza R5 direct drive bundle on a standard wooden desk.",
+      "image": "images/moza-r5.webp"
+    },
+    {
+      "id": "g11",
+      "title": "Hiding Large Power Bricks",
+      "category": "Desk Aesthetics",
+      "difficulty": "Beginner",
+      "description": "Creative DIY solutions to mount heavy power strips and monitor bricks completely out of sight.",
+      "image": "images/power-brick.webp"
+    },
+    {
+      "id": "g12",
+      "title": "144Hz vs 240Hz for Sim Racing",
+      "category": "Hardware",
+      "difficulty": "Intermediate",
+      "description": "Does a higher refresh rate actually lower your lap times? We break down the data.",
+      "image": "images/refresh-rate.webp"
+    },
+    {
+      "id": "g13",
+      "title": "DIY PVC Sim Racing Rig",
+      "category": "Hardware",
+      "difficulty": "Advanced",
+      "description": "Build a rock-solid racing cockpit using standard PVC pipes from the local hardware store.",
+      "image": "images/pvc-rig.webp"
+    },
+    {
+      "id": "g14",
+      "title": "Ultimate FOV Calculator Guide",
+      "category": "System Tweaks",
+      "difficulty": "Intermediate",
+      "description": "Calculate your perfect Field of View for realistic speed perception in iRacing and Dirt Rally.",
+      "image": "images/fov-calc.webp"
+    },
+    {
+      "id": "g15",
+      "title": "Ergonomic Posture for Long Sessions",
+      "category": "Desk Aesthetics",
+      "difficulty": "Beginner",
+      "description": "Adjusting your chair height, monitor tilt, and wheel distance to prevent back pain.",
+      "image": "images/ergonomics.webp"
+    }
+  ]
+}
