@@ -1,8 +1,8 @@
 /* Color Palette & Fonts */
 :root {
-    --bg-color: #111827;       /* Deep Midnight */
-    --accent-color: #1d4ed8;   /* Electric Blue */
-    --text-color: #F9FAFB;     /* Ghost White */
+    --bg-color: #111827;
+    --accent-color: #1d4ed8;
+    --text-color: #F9FAFB;
     --card-bg: #1F2937;
     
     --font-heading: 'Orbitron', sans-serif;
